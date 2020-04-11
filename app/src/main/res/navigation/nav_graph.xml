@@ -31,13 +31,16 @@
         <action
             android:id="@+id/action_showDetail"
             app:destination="@id/detailFragment" />
-    </fragment>
+        </fragment>
 
     <fragment
         android:id="@+id/detailFragment"
         android:name="com.example.android.marsrealestate.detail.DetailFragment"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="selectedProperty"
+            app:argType="com.example.android.marsrealestate.network.MarsProperty" />
     </fragment>
 
 </navigation>
